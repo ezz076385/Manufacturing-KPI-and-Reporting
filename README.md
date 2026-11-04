@@ -1,89 +1,211 @@
 # Manufacturing KPI & Reporting Dashboard
 
-### Turning Shop-Floor Production Data into Operational Insights with Power BI
+> Turning real manufacturing production data into operational insights for better production and performance monitoring.
 
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow)
-![Project Type](https://img.shields.io/badge/Project-Individual-blue)
-![Data](https://img.shields.io/badge/Data-Real%20Operational%20Data-green)
+<p align="center">
+  <img width="100%" alt="Manufacturing Dashboard Overview" src="Screenshots/overview.png" />
+</p>
+
+## Project Overview
+
+Manufacturing operations generate large amounts of production data, but raw records alone do not always provide a clear picture of operational performance.
+
+This project focuses on analyzing real PVC manufacturing production data and transforming it into an interactive Power BI reporting solution.
+
+The dashboard brings together production output, material consumption, waste, Overall Equipment Effectiveness (OEE), and downtime analysis.
+
+Rather than presenting production figures alone, the project was structured around important operational questions:
+
+- How much production output is being achieved?
+- How efficiently are machines operating?
+- What is the relationship between production output and material consumption?
+- How much waste is generated?
+- What are the main indicators of equipment effectiveness?
+- How does downtime affect production operations?
+- Which operational areas deserve further investigation?
+
+The final result is an interactive Power BI dashboard designed to improve production visibility and support data-driven operational decisions.
 
 ---
 
-## 1. Project Overview
+## 1. Business Problem
 
-This project focuses on analyzing manufacturing production data and transforming raw operational records into an interactive Power BI reporting solution.
+Manufacturing teams need more than production totals to understand operational performance.
 
-The dashboard provides visibility into production performance, material consumption, waste, Overall Equipment Effectiveness (OEE), and downtime.
+Production records may contain valuable information about output, material usage, waste, machine performance, and downtime, but these indicators need to be organized into a meaningful reporting structure.
 
-It was developed independently using real manufacturing data to support operational monitoring and data-driven decision-making.
+The purpose of this project was to move from:
 
-## 2. Business Objective
+**Raw Production Data → Data Preparation → KPI Development → Analysis → Dashboard → Decision Support**
 
-The main objective is to provide a centralized reporting solution that helps monitor manufacturing performance and evaluate production efficiency.
+The analysis focuses on four main areas:
 
-The dashboard aims to:
+**Production Performance**
 
-- Monitor production output and operational KPIs.
-- Track raw material consumption and waste.
-- Evaluate OEE and its main components.
-- Analyze downtime and machine stoppages.
-- Identify operational patterns and potential improvement opportunities.
-- Support production monitoring through interactive reporting.
+Monitoring production output and understanding production-related indicators.
 
-## 3. Methodology & Approach
+**Material & Waste Analysis**
 
-The project followed a structured data analytics workflow:
+Tracking raw material consumption and waste percentages.
 
-1. Data Understanding
-2. Data Exploration
-3. Data Cleaning and Preparation
-4. KPI Definition and Calculation
-5. Data Modeling
-6. Dashboard Development
-7. Operational Analysis
+**Equipment Effectiveness**
 
-**Tools & Technologies:**
+Evaluating equipment performance through OEE and its three main components.
 
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Data Visualization
+**Downtime Analysis**
 
-## 4. Data Exploration & Preprocessing
+Understanding machine stoppages, downtime duration, and downtime reasons.
 
-The project started with examining the available manufacturing records to understand their structure, fields, and business meaning.
+---
 
-The preparation process focused on:
+## 2. Dataset
 
-- Reviewing data structure and column consistency.
-- Handling missing and inconsistent values where necessary.
-- Standardizing data for reporting.
-- Preparing the dataset for analysis.
-- Defining the relationships and analytical structure required for reporting.
+The project uses real PVC manufacturing production data covering three years:
 
-The objective was to establish a reliable foundation for KPI calculations and dashboard development.
+- 2024
+- 2025
+- 2026
 
-## 5. Dashboard & Data Visualization
+The source data comes from manufacturing production records.
 
-The report consists of four interactive pages, each designed for a specific analytical purpose.
+The datasets were not treated as identical tables from the beginning. Their structures were reviewed and prepared to establish a consistent analytical foundation.
 
-### HOME
-The main entry point of the report, providing navigation to the analytical sections.
+### Data Structure
 
-### Overview
-A consolidated view of manufacturing performance, including production output, material consumption, and waste indicators.
+The production records include operational information related to:
 
-### OEE Analysis
-An operational performance analysis based on the three main OEE components:
+- Production dates
+- Machine information
+- Production types
+- Models
+- Molds
+- Shifts
+- Production quantities
+- Machine speed
+- Production personnel
+- Downtime
+- Material waste
 
+The available fields vary across the yearly source files, which made data preparation and standardization an important part of the project.
+
+---
+
+## 3. Data Preparation & Analysis Process
+
+The project followed a structured data preparation workflow before building the final dashboard.
+
+### Step 1 — Data Understanding
+
+The original production files were reviewed to understand:
+
+- Data structure and column differences
+- Available production fields
+- Data types
+- Operational dimensions
+- Production measures
+- Missing and repeated records
+
+### Step 2 — Data Staging
+
+The original yearly datasets were brought into a staging process to prepare them for further analysis.
+
+### Step 3 — Data Standardization
+
+Since the 2024, 2025, and 2026 datasets had different structures, the columns and data definitions needed to be standardized before combining the data.
+
+This step focused on establishing consistent field names and compatible structures across the different years.
+
+### Step 4 — Data Cleaning
+
+The preparation process included reviewing:
+
+- Missing values
+- Data consistency
+- Duplicate records
+- Column definitions
+- Production-related fields
+
+### Step 5 — Data Modeling
+
+The prepared data was organized into an analytical structure suitable for reporting and KPI calculations.
+
+### Step 6 — KPI Development & Dashboard Design
+
+Production and operational measures were used to build the reporting framework and create interactive Power BI pages.
+
+---
+
+## 4. Production Overview
+
+<p align="center">
+  <img width="100%" alt="Production Overview" src="Screenshots/overview.png" />
+</p>
+
+The Overview page provides a consolidated view of manufacturing performance.
+
+It brings together important production and material indicators to help users monitor the overall production picture.
+
+The analysis includes:
+
+- Production Meters
+- Good Output
+- Raw Material Used
+- Total Waste %
+- Abnormal Waste %
+
+These indicators help connect production output with material consumption and waste.
+
+---
+
+## 5. OEE Analysis
+
+<p align="center">
+  <img width="100%" alt="OEE Analysis" src="Screenshots/oee.png" />
+</p>
+
+Overall Equipment Effectiveness (OEE) is one of the main analytical areas of this project.
+
+The OEE page focuses on evaluating equipment effectiveness through three fundamental components:
+
+### Availability
+
+Measures the proportion of planned production time during which equipment is available for operation.
+
+### Performance
+
+Evaluates operating performance in relation to the expected production rate.
+
+### Quality
+
+Represents the quality component of equipment effectiveness.
+
+### OEE KPI Framework
+
+The report includes:
+
+- OEE %
 - Availability %
 - Performance %
 - Quality %
+- Planned Hours
+- Net Time
+- Actual Run Time
 
-Along with the overall OEE indicator.
+Together, these indicators provide a structured view of equipment effectiveness and production time utilization.
 
-### Downtime Analysis
-A detailed view of machine downtime and stoppages, including:
+---
+
+## 6. Downtime Analysis
+
+<p align="center">
+  <img width="100%" alt="Downtime Analysis" src="Screenshots/downtime-analysis.png" />
+</p>
+
+Downtime analysis is essential for understanding production interruptions and machine utilization.
+
+This page provides a detailed view of downtime-related indicators.
+
+### Main Downtime KPIs
 
 - Total Downtime Hours
 - Unplanned Downtime
@@ -92,86 +214,188 @@ A detailed view of machine downtime and stoppages, including:
 - Average Stop Duration
 - Cumulative Downtime % by Stop Reason
 
-## 6. Analysis & KPI Framework
+The analysis helps users investigate downtime patterns and identify operational areas that may require further review.
 
-The dashboard includes a collection of manufacturing KPIs designed to monitor production efficiency and operational performance.
+It also provides a foundation for deeper investigation into machine stoppages and their potential production implications.
 
-| KPI | Purpose |
+---
+
+## 7. Key Performance Indicators
+
+The dashboard includes a collection of manufacturing KPIs designed to monitor production performance and operational efficiency.
+
+| KPI | Analytical Purpose |
 |---|---|
-| Production Meters | Monitor total production output |
+| Production Meters | Monitor production output |
 | Good Output | Track accepted production |
 | Raw Material Used | Monitor material consumption |
-| Total Waste % | Evaluate overall material waste |
+| Total Waste % | Evaluate overall waste |
 | Abnormal Waste % | Monitor abnormal waste |
-| OEE % | Measure overall equipment effectiveness |
+| OEE % | Measure equipment effectiveness |
 | Availability % | Evaluate equipment availability |
 | Performance % | Measure operating performance |
-| Quality % | Evaluate production quality |
+| Quality % | Evaluate the quality component |
 | Planned Hours | Track planned production time |
-| Net Time | Monitor net available production time |
-| Actual Run Time | Track actual machine operating time |
+| Net Time | Monitor net production time |
+| Actual Run Time | Track actual operating time |
 | Total Downtime Hours | Measure total downtime |
 | Unplanned Downtime | Monitor unplanned production losses |
-| Downtime % | Evaluate downtime relative to operating time |
-| Number of Stops | Track machine stoppage frequency |
+| Downtime % | Evaluate downtime |
+| Number of Stops | Track stoppage frequency |
 | Average Stop Duration | Measure average stoppage duration |
 
-These KPIs provide different perspectives on production efficiency, equipment utilization, material performance, and operational losses.
+---
 
-## 7. Key Findings & Business Use
+## 8. Business Questions This Dashboard Helps Answer
 
-Rather than focusing only on production totals, the dashboard provides a structured way to investigate operational performance.
+The dashboard was designed to support investigation of important manufacturing questions:
 
-It enables users to:
+- How is production output performing?
+- How much raw material is being consumed?
+- What percentage of production is classified as waste?
+- How effective is equipment operation?
+- Which OEE component requires further investigation?
+- How much production time is lost to downtime?
+- How frequently do machines stop?
+- What are the main recorded downtime reasons?
+- Where should production teams focus their operational investigations?
 
-- Compare production performance across available reporting dimensions.
-- Monitor waste and material consumption.
-- Evaluate equipment effectiveness through OEE.
-- Examine downtime patterns and stoppage reasons.
-- Identify areas that may require further operational investigation.
-- Support discussions around production efficiency and improvement opportunities.
+---
 
-The dashboard is designed to help users move from raw production records to actionable operational questions.
+## 9. Business Value
 
-## 8. Project Summary
+The purpose of this dashboard is not simply to display production statistics.
 
-This project demonstrates the application of Power BI in manufacturing analytics, combining operational data, KPI development, data modeling, and interactive visualization.
+It provides a structured reporting environment that can support:
 
-It reflects the importance of connecting manufacturing knowledge with data analytics to build reporting solutions that support better operational visibility.
+- Production performance monitoring
+- Material consumption analysis
+- Waste monitoring
+- Equipment effectiveness evaluation
+- Downtime investigation
+- Operational performance reviews
+- Data-driven production discussions
 
-## 9. Future Improvements
+By bringing different manufacturing indicators together, the dashboard makes operational information easier to explore and interpret.
 
-Potential future enhancements include:
+---
 
-- Adding more advanced production trend analysis.
-- Developing machine-level performance comparisons.
-- Expanding downtime root-cause analysis.
-- Introducing production targets and variance analysis.
-- Implementing automated data refresh.
-- Developing predictive maintenance indicators where suitable data is available.
+## 10. Limitations & Considerations
 
-## 10. Project Files & Review
+The interpretation of manufacturing KPIs depends on the quality and definitions of the underlying production records.
 
-The repository includes the Power BI report file.
+Important considerations include:
 
-**To explore the project:**
+- KPI definitions should remain consistent across reporting periods.
+- Differences in yearly source structures must be considered during data preparation.
+- Downtime indicators should be interpreted according to the available recorded downtime information.
+- Identifying a downtime pattern does not automatically establish its root cause.
+- Operational improvement claims require additional validation and measurement.
 
-1. Download the `.pbix` file.
+These considerations help distinguish between observed data patterns and conclusions that require further investigation.
+
+---
+
+## 11. Tools & Technologies
+
+**Tools**
+
+- Microsoft Power BI
+- Power Query
+- DAX
+- SQL Server
+- Microsoft Excel
+
+**Analytical Techniques**
+
+- Data exploration
+- Data cleaning
+- Data standardization
+- Data modeling
+- KPI development
+- Operational analysis
+- OEE analysis
+- Downtime analysis
+- Interactive data visualization
+
+---
+
+## 12. Dashboard Structure
+
+The Power BI report consists of four pages:
+
+### Home
+
+<p align="center">
+  <img width="100%" alt="Home Page" src="Screenshots/home.png" />
+</p>
+
+The main navigation page for accessing the report sections.
+
+### Overview
+
+<p align="center">
+  <img width="100%" alt="Overview Page" src="Screenshots/overview.png" />
+</p>
+
+A consolidated view of production output, material consumption, and waste indicators.
+
+### OEE
+
+<p align="center">
+  <img width="100%" alt="OEE Page" src="Screenshots/oee.png" />
+</p>
+
+A focused analysis of equipment effectiveness and its main components.
+
+### Downtime Analysis
+
+<p align="center">
+  <img width="100%" alt="Downtime Analysis Page" src="Screenshots/downtime-analysis.png" />
+</p>
+
+A detailed view of downtime hours, stoppages, and recorded downtime reasons.
+
+---
+
+## 13. Portfolio Takeaway
+
+This project demonstrates a practical application of data analytics in manufacturing operations.
+
+The focus was not only on creating visualizations, but also on understanding production data, handling different source structures, preparing a consistent analytical foundation, and developing meaningful operational KPIs.
+
+It reflects the value of combining manufacturing knowledge with data analytics to turn production records into a structured reporting solution.
+
+**Raw Data → Standardization → Data Modeling → KPI Development → Operational Insights**
+
+---
+
+## Project Files
+
+The repository includes the Power BI report:
+
+`Report/Manufacturing-KPI-and-Reporting.pbix`
+
+To explore the project:
+
+1. Download the PBIX file.
 2. Open it using Power BI Desktop.
 3. Navigate through the four report pages.
-4. Explore the available filters, KPIs, and visualizations.
+4. Explore the available KPIs and visualizations.
 
-### Repository Structure
+---
 
-```text
-Manufacturing-KPI-and-Reporting/
-│
-├── README.md
-│
-├── Report/
-│   └── Manufacturing-KPI-and-Reporting.pbix
-│
-└── Screenshots/
-    ├── overview.png
-    ├── oee.png
-    └── downtime-analysis.png
+## Author
+
+**Mohamed Ezz**
+
+Data Analyst | Manufacturing & Operations Analytics
+
+Focused on transforming operational data into meaningful insights using Power BI, Excel, SQL, and data analytics techniques.
+
+- GitHub: [ezz076385](https://github.com/ezz076385)
+- LinkedIn: [Mohamed Ezz](https://www.linkedin.com/in/mohamedezz076385/)
+
+---
+
+*This is an independently developed portfolio project based on real manufacturing production data. The dashboard demonstrates analytical and reporting capabilities. No specific financial impact or operational improvement is claimed without separately validated measurements.*
