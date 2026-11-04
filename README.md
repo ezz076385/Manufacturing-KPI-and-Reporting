@@ -1,12 +1,13 @@
 # Manufacturing KPI & Reporting Dashboard
 
 > Turning real manufacturing production data into operational insights for better production and performance monitoring.
-
+## Project Overview
 <p align="center">
-  <img width="100%" alt="Manufacturing Dashboard Overview" src="Screenshots/overview.png" />
+ <img width="1458" height="842" alt="Screenshot 2026-11-03 225107" src="https://github.com/user-attachments/assets/a827bf88-e559-4583-aecd-ecab885c5b5d" />
 </p>
 
-## Project Overview
+
+
 
 Manufacturing operations generate large amounts of production data, but raw records alone do not always provide a clear picture of operational performance.
 
@@ -137,8 +138,11 @@ Production and operational measures were used to build the reporting framework a
 
 ## 4. Production Overview
 
+
+  <img width="1265" height="138" alt="Screenshot 2026-11-04 142636" src="https://github.com/user-attachments/assets/c1e9f667-6cd0-47fe-8731-9712eb2816c5" />
+
+
 <p align="center">
-  <img width="100%" alt="Production Overview" src="Screenshots/overview.png" />
 </p>
 
 The Overview page provides a consolidated view of manufacturing performance.
@@ -160,7 +164,8 @@ These indicators help connect production output with material consumption and wa
 ## 5. OEE Analysis
 
 <p align="center">
-  <img width="100%" alt="OEE Analysis" src="Screenshots/oee.png" />
+<img width="1461" height="840" alt="Screenshot 2026-11-03 225128" src="https://github.com/user-attachments/assets/6aaea3d5-830b-4903-ae75-94195a9d36b1" />
+
 </p>
 
 Overall Equipment Effectiveness (OEE) is one of the main analytical areas of this project.
@@ -198,7 +203,8 @@ Together, these indicators provide a structured view of equipment effectiveness 
 ## 6. Downtime Analysis
 
 <p align="center">
-  <img width="100%" alt="Downtime Analysis" src="Screenshots/downtime-analysis.png" />
+ <img width="1453" height="848" alt="Screenshot 2026-11-03 225147" src="https://github.com/user-attachments/assets/1a9ec7d7-9514-4c42-a7d3-4ab4c0e9ea06" />
+
 </p>
 
 Downtime analysis is essential for understanding production interruptions and machine utilization.
@@ -327,7 +333,9 @@ The Power BI report consists of four pages:
 ### Home
 
 <p align="center">
-  <img width="100%" alt="Home Page" src="Screenshots/home.png" />
+<img width="1465" height="757" alt="Screenshot 2026-11-03 224931" src="https://github.com/user-attachments/assets/8abc3696-9b80-4652-be09-c64e1bfb6ea9" />
+
+
 </p>
 
 The main navigation page for accessing the report sections.
@@ -335,7 +343,8 @@ The main navigation page for accessing the report sections.
 ### Overview
 
 <p align="center">
-  <img width="100%" alt="Overview Page" src="Screenshots/overview.png" />
+ <img width="1458" height="842" alt="Screenshot 2026-11-03 225107" src="https://github.com/user-attachments/assets/1a8fc882-b7d4-4524-b2c2-4706d071f26b" />
+
 </p>
 
 A consolidated view of production output, material consumption, and waste indicators.
@@ -343,7 +352,8 @@ A consolidated view of production output, material consumption, and waste indica
 ### OEE
 
 <p align="center">
-  <img width="100%" alt="OEE Page" src="Screenshots/oee.png" />
+<img width="1461" height="840" alt="Screenshot 2026-11-03 225128" src="https://github.com/user-attachments/assets/74c92f80-7d0a-4095-b801-87d67f7c6c6e" />
+
 </p>
 
 A focused analysis of equipment effectiveness and its main components.
@@ -351,7 +361,8 @@ A focused analysis of equipment effectiveness and its main components.
 ### Downtime Analysis
 
 <p align="center">
-  <img width="100%" alt="Downtime Analysis Page" src="Screenshots/downtime-analysis.png" />
+<img width="1453" height="848" alt="Screenshot 2026-11-03 225147" src="https://github.com/user-attachments/assets/cc3bfb99-bfa4-4c76-8a3d-ccf74b4eab30" />
+
 </p>
 
 A detailed view of downtime hours, stoppages, and recorded downtime reasons.
